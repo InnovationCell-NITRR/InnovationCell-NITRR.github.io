@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "https://innovationcell-nitrr.github.io/pitcher/static/css/main.3a4d08e8.css",
-    "main.js": "https://innovationcell-nitrr.github.io/pitcher/static/js/main.390c276c.js",
+    "main.js": "https://innovationcell-nitrr.github.io/pitcher/static/js/main.df2c33a8.js",
     "static/js/787.b44dba70.chunk.js": "https://innovationcell-nitrr.github.io/pitcher/static/js/787.b44dba70.chunk.js",
     "static/media/logo.svg": "https://innovationcell-nitrr.github.io/pitcher/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "https://innovationcell-nitrr.github.io/pitcher/index.html",
     "main.3a4d08e8.css.map": "https://innovationcell-nitrr.github.io/pitcher/static/css/main.3a4d08e8.css.map",
-    "main.390c276c.js.map": "https://innovationcell-nitrr.github.io/pitcher/static/js/main.390c276c.js.map",
+    "main.df2c33a8.js.map": "https://innovationcell-nitrr.github.io/pitcher/static/js/main.df2c33a8.js.map",
     "787.b44dba70.chunk.js.map": "https://innovationcell-nitrr.github.io/pitcher/static/js/787.b44dba70.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a4d08e8.css",
-    "static/js/main.390c276c.js"
+    "static/js/main.df2c33a8.js"
   ]
 }
