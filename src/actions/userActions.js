@@ -17,7 +17,7 @@ export const login = (code, name) => async (dispatch) => {
       },
     };
 
-    const { data } = await axios.post("/api/v1/login", { code, name }, config);
+    const { data } = await axios.post(`/api/v1/login`, { code, name }, config);
     console.log("login action data : ", data);
 
     dispatch({ type: LOGIN_SUCCESS, payload: data.info });
