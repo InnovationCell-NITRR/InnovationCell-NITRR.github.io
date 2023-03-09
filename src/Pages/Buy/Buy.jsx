@@ -40,6 +40,8 @@ function Buy() {
 
   const handleBuy = () => {
     let buyProd = buyRef.current.value;
+    buyProd = parseInt(buyProd, 10);
+    console.log("buyProd type", typeof(buyProd));
     console.log("buyProd", buyProd);
     if (buyProd < 0 || !buyProd) {
       ToastCallError("Enter buyProd ");
@@ -52,8 +54,8 @@ function Buy() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    socket = io("https://pitcherfork.onrender.com");
-    // socket = io("http://localhost:5000");
+    // socket = io("https://pitcherfork.onrender.com");
+    socket = io("http://localhost:5000");
     console.log("useeffect");
 
     userId = localStorage.getItem("icell_pitcher_userId")
