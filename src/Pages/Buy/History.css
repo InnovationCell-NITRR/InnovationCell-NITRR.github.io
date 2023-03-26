@@ -63,7 +63,8 @@
 }
 
 .cartHeader > p:last-child{
-    text-align: end;
+    display: flex;
+    justify-content: center;
 }
 
 .cartContainer {
@@ -77,6 +78,7 @@
     height: 8vmax;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .cartInput > button {
