@@ -58,11 +58,11 @@ const History = () => {
             <div className="cartGrossTotal">
               <div></div>
               <div className="cartGrossTotalBox">
-                <p>Gross Total</p>
+                <p>Total Stocks</p>
                 <p>{`${
                   cartItems &&
                   cartItems.reduce((accum, item) => accum + item.boughtStock, 0)
-                } Rs.`}</p>
+                } `}</p>
               </div>
               <div></div>
               <div className="checkOutBtn">
