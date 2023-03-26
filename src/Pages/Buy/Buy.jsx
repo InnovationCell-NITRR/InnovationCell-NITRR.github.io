@@ -70,11 +70,11 @@ function Buy() {
 
     socket.on("stock-empty", () => {
       console.log("stock empty working");
-      ToastCallError("stock empty");
+      ToastCallError("Startups doesn't have enough stock");
     });
     socket.on("userStock-empty", () => {
       console.log("stock empty working");
-      ToastCallError("Dont have enough Stock ");
+      ToastCallError("You don't have enough money ")
     });
 
     socket.on("successfully-purchased", (purchasedProd) => {
