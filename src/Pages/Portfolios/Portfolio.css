@@ -8,6 +8,7 @@
     align-items: center;
     gap:20px;
     color: white;
+    margin-top: 4rem;
 }
 
 .card-div
@@ -16,9 +17,22 @@
     max-width: 80%;
     justify-content: center;
     align-items: center;
-    
     margin-top: 2vh;
-  
+}
+
+.instructions {
+    color: '#000';
+    position: 'absolute';
+    top: '53%';
+    left: '50%';
+    transform: 'translate(-50%, -50%)';
+    width: '78%';
+    height: '60%';
+    background-color: 'background.paper';
+    border: '2px solid #000';
+    border-radius: '8px';
+    box-shadow: 24;
+    z-index: 4;
 }
 
 
