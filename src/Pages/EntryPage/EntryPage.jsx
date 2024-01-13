@@ -5,14 +5,14 @@ import {useDispatch, useSelector} from "react-redux";
 import {isLoggedIn, login} from "../../actions/userActions.js";
 import logo from "./NITrr.png";
 import logox from "./logoX.png";
-import logoy from "./Icell2.png";
+import logoy from "./Icell4.png";
 function EntryPage() {
   const navigate = useNavigate();
   const nameRef = useRef(null);
   const codeRef = useRef(null);
   const dispatch = useDispatch();
 
-  const {isAuthenticated, error} = useSelector((state) => state.entryReducer);
+  const { isAuthenticated, error } = useSelector((state) => state.entryReducer);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -35,30 +35,32 @@ function EntryPage() {
   };
 
   return (
-    <div className='entry'>
-      <div className='container'>
-        <div className='card'>
-          <form className='content' onSubmit={(e) => handleSubmit(e)}>
-            <div className='logos'>
+    <div className="entry">
+      <div className="container">
+        <div className="nit-logo">
+          <img src={logo} alt="" width="140px" height="150px" />
+        </div>
+        <div className="card">
+          <form className="content" onSubmit={(e) => handleSubmit(e)}>
+            {/* <div className="logos">
               <div>
                 {" "}
-                <img src={logoy} alt='' />
+                <img src={logo} alt="" />
               </div>
-
               <div>
                 {" "}
-                <img src={logo} alt='' />
+                <img src={logoy} alt="" />
               </div>
-            </div>
+            </div> */}
 
-            <h3>AVINYA 2k23</h3>
+            <h3>Sign In</h3>
             <p>
-              <input type='text' placeholder='Name' ref={nameRef} />
+              <input type="text" placeholder="Name" ref={nameRef} />
             </p>
             <p>
-              <input type='text' placeholder='Code' ref={codeRef} />
+              <input type="text" placeholder="Code" ref={codeRef} />
             </p>
-            <button>submit</button>
+            <button>Sign In</button>
           </form>
         </div>
       </div>
